@@ -6,7 +6,7 @@ displayScenario: true
 displayDetailed: true
 
 summaryConfig:
-  title: Grasshopper PDF Report
+  title: Bradesco Seguros - Automation test
   dataBackgroundColor: 4F0CC8
   titleColor: FF0000
   dateColor: 969696

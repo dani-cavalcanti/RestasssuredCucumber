@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">API Automation Suite Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">set 28, 2021 04:19:16 PM</span></a>
+<a href="#"><span class="badge badge-primary">set 28, 2021 04:30:08 PM</span></a>
 </li>
 </ul>
 </div>
@@ -92,7 +92,7 @@
           <div class="test-detail">
             <p class="name">Test consult the via CEP API</p>
             <p class="text-sm">
-              <span>16:19:16</span> / <span>00:00:01:962</span>
+              <span>16:30:08</span> / <span>00:00:06:316</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -101,9 +101,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Test consult the via CEP API</h5>
-<span class='badge badge-success'>09.28.2021 16:19:16</span>
-<span class='badge badge-danger'>09.28.2021 16:19:18</span>
-<span class='badge badge-default'>00:00:01:962</span>
+<span class='badge badge-success'>09.28.2021 16:30:08</span>
+<span class='badge badge-danger'>09.28.2021 16:30:14</span>
+<span class='badge badge-default'>00:00:06:316</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -115,13 +115,65 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Test Add Place</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Test Get viaCEP</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="step.ViaCep.user_calls_request_with_http_request(java.lang.String,java.lang.String)">
                 <span>Given User calls "viaCEP" with "GET" http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step.ViaCep.status_code_is(java.lang.Integer)">
+                <span>Then Status code is 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step.ViaCep.i_validate_the_schema()">
+                <span>And Validate the schema</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Test Get viaCEP 1</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step.ViaCep.user_calls_request_with_http_request(java.lang.String,java.lang.String)">
+                <span>Given User calls "viaCEP1" with "GET" http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step.ViaCep.status_code_is(java.lang.Integer)">
+                <span>Then Status code is 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step.ViaCep.i_validate_the_schema()">
+                <span>And Validate the schema</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Test Get viaCEP 2</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step.ViaCep.user_calls_request_with_http_request(java.lang.String,java.lang.String)">
+                <span>Given User calls "viaCEP2" with "GET" http request</span>
       <div>
       </div>
               </div>
@@ -161,15 +213,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>3</span>
 </span>
 <p class="name">@viaCep</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@viaCep</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -182,11 +234,31 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>16:19:16 PM</td>
+<td>16:30:08 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Test Add Place</a>
+<a href="#" class="linked" test-id='1' id='2'>Test Get viaCEP</a>
 <div class="">
-<span class="badge badge-default">Test consult the via CEP API.Test Add Place</span>
+<span class="badge badge-default">Test consult the via CEP API.Test Get viaCEP</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:30:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>Test Get viaCEP 1</a>
+<div class="">
+<span class="badge badge-default">Test consult the via CEP API.Test Get viaCEP 1</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:30:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Test Get viaCEP 2</a>
+<div class="">
+<span class="badge badge-default">Test consult the via CEP API.Test Get viaCEP 2</span>
 </div>
 </td>
 </tr>
@@ -207,13 +279,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>set 28, 2021 04:19:16 PM</h3>
+<h3>set 28, 2021 04:30:08 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>set 28, 2021 04:19:18 PM</h3>
+<h3>set 28, 2021 04:30:14 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -264,7 +336,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -284,7 +356,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>9</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -303,7 +375,7 @@
 </div></div>
 <script>
 var timeline = {
-"Test consult the via CEP API":1.962
+"Test consult the via CEP API":6.316
 };
 </script>
 <div class="row">
@@ -314,7 +386,7 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@viaCep</td>
-<td>1</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -334,13 +406,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 3,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 3,
+passGrandChild: 9,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
