@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class PropertiesReader {
 
-    Properties properties = null;
+    Properties properties = new Properties();
 
     String defaultFilepath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
 
@@ -19,13 +19,14 @@ public class PropertiesReader {
         final String filepathFromEnv = System.getProperty("user.dir") + "/src/test/resources/config." + environment + ".properties";
 
         try {
+            if (this.properties.isEmpty()) {
 
-            properties = new Properties();
-            properties.load(new FileInputStream(defaultFilepath));
+                this.properties.load(new FileInputStream(defaultFilepath));
 
-            final Path path = Paths.get(filepathFromEnv);
-            if (Files.exists(path)) {
-                properties.load(new FileInputStream(filepathFromEnv));
+                final Path path = Paths.get(filepathFromEnv);
+                if (Files.exists(path)) {
+                    this.properties.load(new FileInputStream(filepathFromEnv));
+                }
             }
 
         } catch (IOException fnfe) {
@@ -34,7 +35,7 @@ public class PropertiesReader {
     }
 
     public String getPropValue(String keyvalue) {
-        return properties.getProperty(keyvalue);
+        return this.properties.getProperty(keyvalue);
     }
 
 }
