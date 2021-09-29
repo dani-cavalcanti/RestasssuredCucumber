@@ -55,7 +55,7 @@ abstract class StepValidationUtils {
 
     public void validationSchema(final ValidatableResponse validatableResponse, String schemaName) {
 
-        final String schemaPath = "constracts/".concat(schemaName).concat(".json");
+        final String schemaPath = "contracts/".concat(schemaName).concat(".json");
         validatableResponse.body(matchesJsonSchemaInClasspath(schemaPath)).assertThat();
 
     }
