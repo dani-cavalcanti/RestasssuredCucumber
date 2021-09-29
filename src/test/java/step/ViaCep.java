@@ -1,5 +1,6 @@
 package step;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.Method;
@@ -56,4 +57,8 @@ public class ViaCep extends StepValidationUtils {
         validationSchema(validatableResponse, this.api);
     }
 
+    @And("Validate the schema {string}")
+    public void validateTheSchema(String schemaName) {
+        validationSchema(validatableResponse, schemaName);
+    }
 }
